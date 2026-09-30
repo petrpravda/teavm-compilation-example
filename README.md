@@ -24,3 +24,5 @@ reuse the runtime cache, and program execution completes when the Java `main`
 callback fires even if the program has no `teavm_stopped` export.
 
 The Java program reports TeaVM's Java and OS properties, selected environment variables, locale, time zone, charset, and runtime readings. It then counts primes below 10,000 and draws an ASCII Mandelbrot set. TeaVM's class library reports `java.version` and `java.vm.version` as `21`. `System.getenv()` with no argument is unavailable here, so the example asks for relevant names individually.
+
+This project is licensed under the Apache License 2.0; see [LICENSE](LICENSE). The vendored TeaVM compiler files retain their upstream license, included at `public/vendor/teavm-javac/LICENSE`.
